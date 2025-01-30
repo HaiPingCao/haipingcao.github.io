@@ -4,9 +4,12 @@
      --TextColor: rgb(0, 60, 255);
 }
 .nav {
-     justify-content: center;
+     justify-content: space-between;
      align-items: center;
      display: flex;
+     flex-wrap: wrap;
+
+
      background-color: var(--BackgroundColor);
      color: var(--TextColor);
 }
@@ -20,6 +23,16 @@
      white-space: nowrap;
      overflow: auto;
 
+     
+}
+.logo #menu {
      margin: auto 24px;
 }
 
+ul {
+     display: block;
+     margin-block-start: 1em;
+     margin-block-end: 1em;
+     padding-inline-start: 40px;
+     unicode-bidi: isolate;
+}
