@@ -1,0 +1,25 @@
+:root {
+     --BackgroundColor: #fdd6b2;
+     --ShadowColor: rgba(0, 0, 0, 0.1);
+     --TextColor: rgb(0, 60, 255);
+}
+.nav {
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     background-color: var(--BackgroundColor);
+     color: var(--TextColor);
+}
+.menu {
+     display: flex;
+     background-color: var(--BackgroundColor);
+     color: var(--TextColor);
+
+     list-style: none;
+     word-break: keep-all;
+     white-space: nowrap;
+     overflow: auto;
+
+     margin: auto 24px;
+}
+
