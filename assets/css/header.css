@@ -1,0 +1,74 @@
+:root {
+     --BackgroundColor: #fdd6b2;
+     --ShadowColor: rgba(0, 0, 0, 0.1);
+     --TextColor: rgb(0, 0, 0);
+     --DebugColor: red;
+}
+.header {
+     justify-content: space-between;
+     align-items: center;
+     display: flex;
+     flex-wrap: wrap;
+
+     background-color: var(--BackgroundColor);
+     color: var(--TextColor);
+}
+.menu {
+     display: flex;
+     background-color: var(--BackgroundColor);
+     color: var(--TextColor);
+
+     list-style: none;
+     word-break: keep-all;
+     white-space: nowrap;
+     overflow: auto;
+     align-items: center;
+
+     margin: auto 24px;
+}
+.menu li {
+     color: var(--TextColor);
+     margin: 0 0.4em;
+}
+ul {
+     display: block;
+     margin-block-start: 1em;
+     margin-block-end: 1em;
+     padding-inline-start: 40px;
+     unicode-bidi: isolate;
+}
+ul li :link {
+     color: var(--TextColor);
+     text-decoration: none;
+}
+ul li :visited {
+     color: var(--TextColor);
+     text-decoration: none;
+}
+ul li :active {
+     color: var(--TextColor);
+     text-decoration: underline;
+}
+/* .logo #menu {
+     margin: auto 24px;
+} */
+.logo {
+     display: block;
+     margin: auto 24px;
+     text-align: center;
+     background-color: var(--DebugColor);
+}
+ /* Style buttons */
+.toggle-theme-btn {
+     background-color: var(--BackgroundColor); /* Blue background */
+     border: none; /* Remove borders */
+     color: white; /* White text */
+     padding: 12px 16px; /* Some padding */
+     font-size: 16px; /* Set a font size */
+     cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.toggle-theme-btn:hover {
+     background-color: var(--BackgroundColor);
+} 
