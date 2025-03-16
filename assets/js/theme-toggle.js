@@ -1,67 +1,29 @@
-// Wait for the DOM to be fully loaded
+// Wait until DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Get reference to the toggle button
-    const toggleButton = document.querySelector('.toggle-theme-btn');
+    // Select the theme toggle button
+    const themeToggleBtn = document.querySelector('.toggle-theme-btn');
     
-    // Define color schemes
-    const lightTheme = {
-        '--BackgroundColor': '#fdd6b2',
-        '--ShadowColor': 'rgba(0, 0, 0, 0.1)',
-        '--TextColor': 'rgb(0, 0, 0)',
-        '--DebugColor': 'red',
-        '--PageBackground': '#fff5e6',
-        '--CardBackground': '#fff0d9',
-        '--AccentColor': '#ff9d4d',
-        '--BorderColor': '#ffbb80',
-        '--HoverColor': '#ffb266'
-    };
+    // Check if there's a saved theme preference in localStorage
+    const savedTheme = localStorage.getItem('theme');
     
-    const darkTheme = {
-        '--BackgroundColor': '#2d2d2d',
-        '--ShadowColor': 'rgba(255, 255, 255, 0.1)',
-        '--TextColor': '#f5f5f5',
-        '--DebugColor': 'blue',
-        '--PageBackground': '#121212',
-        '--CardBackground': '#1e1e1e',
-        '--AccentColor': '#ff7700',
-        '--BorderColor': '#444444',
-        '--HoverColor': '#ff9d4d'
-    };
-    
-    // Check for saved theme preference in localStorage
-    const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
-    
-    // Apply saved theme or default to light theme
-    if (isDarkMode) {
-        applyTheme(darkTheme);
-        toggleButton.textContent = '☀️'; // Sun icon for light mode
+    // Apply the saved theme if it exists
+    if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark-theme');
+        themeToggleBtn.textContent = '☀️'; // Sun emoji for switching to light mode
     }
     
-    // Function to apply theme by setting CSS variables
-    function applyTheme(theme) {
-        for (const [property, value] of Object.entries(theme)) {
-            document.documentElement.style.setProperty(property, value);
-        }
-    }
-    
-    // Add click event listener to toggle button
-    toggleButton.addEventListener('click', function() {
-        // Check current mode by looking at background color
-        const currentBgColor = getComputedStyle(document.documentElement)
-            .getPropertyValue('--BackgroundColor').trim();
+    // Add click event listener to the theme toggle button
+    themeToggleBtn.addEventListener('click', function() {
+        // Toggle the dark-theme class on the root element
+        document.documentElement.classList.toggle('dark-theme');
         
-        // Toggle between dark and light mode
-        if (currentBgColor === lightTheme['--BackgroundColor'] || 
-            currentBgColor === '') {
-            // Switch to dark mode
-            applyTheme(darkTheme);
-            toggleButton.textContent = '☀️'; // Change to sun icon
-            localStorage.setItem('darkMode', 'enabled');
+        // Update the button text based on the current theme
+        if (document.documentElement.classList.contains('dark-theme')) {
+            themeToggleBtn.textContent = '☀️'; // Sun emoji for switching to light mode
+            localStorage.setItem('theme', 'dark');
         } else {
-            // Switch to light mode
-            applyTheme(lightTheme);
-            toggleButton.textContent = '🌙'; // Change to moon icon
-            localStorage.setItem('darkMode', 'disabled');
+            themeToggleBtn.textContent = '🌙'; // Moon emoji for switching to dark mode
+            localStorage.setItem('theme', 'light');
         }
     });
 });
