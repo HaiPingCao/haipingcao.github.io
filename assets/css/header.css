@@ -4,14 +4,15 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--BackgroundColor);
+  background-color: var(--AccentColor);
   color: var(--TextColor);
-  /* Circular Bevel Effect */
   border-radius: 10px;
   padding: 5px 10px;
-  margin: 8px;
+  margin: 8px auto;
   position: relative;
   overflow: hidden;
+  max-width: var(--HeaderWidth);
+  width: 100%;
 }
 
 /* Logo styling */
@@ -20,8 +21,7 @@
   margin: auto 24px;
   text-align: center;
   font-weight: bold;
-  color: var(--AccentColor);
-  text-shadow: 1px 1px 1px var(--ShadowColor);
+  color: var(--TextColor);
   font-size: 1.5rem;
 }
 
@@ -38,17 +38,14 @@
   align-items: center;
   margin: auto 24px;
 }
-
 .menu li {
   color: var(--TextColor);
   margin: 0 0.4em;
   transition: transform 0.2s ease;
 }
-
 .menu li:hover {
   transform: translateY(-2px);
 }
-
 .menu li a {
   color: var(--TextColor);
   text-decoration: none;
@@ -56,15 +53,13 @@
   padding: 8px 12px;
   border-radius: 5px;
 }
-
 .menu li a:hover {
-  color: var(--AccentColor);
+  color: var(--TextColor);
 }
 
 /* Theme toggle button */
 .toggle-theme-btn {
   background-color: transparent;
-  border: 2px solid var(--BorderColor);
   border-radius: 50%;
   color: var(--TextColor);
   padding: 8px;
@@ -76,7 +71,6 @@
   width: 20px;
   height: 20px;
 }
-
 .toggle-theme-btn:hover {
   background-color: var(--HoverColor);
 }
@@ -87,11 +81,9 @@
     flex-direction: column;
     padding: 10px;
   }
-
   .logo {
     margin: 10px 0;
   }
-
   .menu {
     margin: 10px 0;
     justify-content: center;
