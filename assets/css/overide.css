@@ -15,12 +15,12 @@
     
     /* Dark Theme Variables (applied via JavaScript) - Discord Dark Mode Colors */
     :root.dark-theme {
-     --AccentColor: #7289da;
-     --TextColor: #dcddde;
-     --PageBackground: #2f3136;
-     --HoverColor: #5865f2;
-     --CardBackground: #40444b;
-     --BackgroundColor: #36393f;
+     --AccentColor: #ff9d4d;
+     --TextColor: #ffffff;
+     --PageBackground: #26282c;
+     --HoverColor: #0d1eda;
+     --CardBackground: #545a63;
+     --BackgroundColor: #000000;
      --BorderColor: #202225;
     }
     
