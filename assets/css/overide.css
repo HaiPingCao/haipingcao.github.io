@@ -1,79 +1,78 @@
 /* Complete Page Color Scheme */
 :root {
-     --AccentColor: #ff9d4d;
-     --TextColor: rgb(0, 0, 0);
-     --PageBackground: #ffffff;
-     --HoverColor: #ffb266;
-     --CardBackground: #fff0d9;
-     --BackgroundColor: #fdd6b2;
-     --BorderColor: #ffbb80;
-     --HeaderWidth: 65%;
-     --BodyWidth: 67%;
-     --FooterWidth: 65%;
-     --ContentMaxWidth: 1200px;
-    }
-    
-    /* Dark Theme Variables (applied via JavaScript) - Discord Dark Mode Colors */
-    :root.dark-theme {
-     --AccentColor: #ff9d4d;
-     --TextColor: #ffffff;
-     --PageBackground: #26282c;
-     --HoverColor: #0d1eda;
-     --CardBackground: #545a63;
-     --BackgroundColor: #000000;
-     --BorderColor: #202225;
-    }
-    
-    /* Base styles for the entire page */
-    body {
-     background-color: var(--PageBackground);
-     color: var(--TextColor);
-     font-family: "JetBrains Mono", monospace;
-     margin: 0;
-     padding: 0;
-     transition: all 0.3s ease;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     width: 100%;
-    }
-    
-    /* Section headings */
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-     color: var(--AccentColor);
-    }
-    
-    /* Buttons */
-    button {
-     background-color: var(--AccentColor);
-     color: white;
-     border: none;
-     border-radius: 5px;
-     padding: 10px 15px;
-     cursor: pointer;
-     transition: background-color 0.3s ease;
-    }
-    button:hover {
-     background-color: var(--HoverColor);
-    }
-    
-    /* Reset some default browser styles */
-    * {
-     box-sizing: border-box;
-     margin: 0;
-     padding: 0;
-    }
-    img {
-     max-width: 100%;
-     height: auto;
-    }
-    a {
-     text-decoration: none;
-     color: inherit;
-    }
-    
+  --AccentColor: #ff9d4d;
+  --TextColor: rgb(0, 0, 0);
+  --PageBackground: #ffffff;
+  --HoverColor: #ffb266;
+  --CardBackground: #fff0d9;
+  --BackgroundColor: #fdd6b2;
+  --BorderColor: #ffbb80;
+  --HeaderWidth: 65%;
+  --BodyWidth: 67%;
+  --FooterWidth: 65%;
+  --ContentMaxWidth: 1200px;
+}
+
+/* Dark Theme Variables (applied via JavaScript) - Discord Dark Mode Colors */
+:root.dark-theme {
+  --AccentColor: #ff9d4d;
+  --TextColor: #ffffff;
+  --PageBackground: #26282c;
+  --HoverColor: #0d1eda;
+  --CardBackground: #545a63;
+  --BackgroundColor: #000000;
+  --BorderColor: #202225;
+}
+
+/* Base styles for the entire page */
+body {
+  background-color: var(--PageBackground);
+  color: var(--TextColor);
+  font-family: "JetBrains Mono", monospace;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Section headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--AccentColor);
+}
+
+/* Buttons */
+button {
+  background-color: var(--AccentColor);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: var(--HoverColor);
+}
+
+/* Reset some default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
