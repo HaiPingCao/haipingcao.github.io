@@ -2,11 +2,12 @@
 :root {
   --AccentColor: #ff9d4d;
   --TextColor: rgb(0, 0, 0);
-  --PageBackground: #ffffff;
+  --PageBackground: #474747;
   --HoverColor: #ffb266;
   --CardBackground: #fff0d9;
   --BackgroundColor: #fdd6b2;
   --BorderColor: #ffbb80;
+  
   --HeaderWidth: 65%;
   --BodyWidth: 67%;
   --FooterWidth: 65%;
