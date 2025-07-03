@@ -10,6 +10,7 @@
 
   --HeaderWidth: 45%;
   --BodyWidth: 47%;
+  /* --BodyWidth: 847px; */
   --FooterWidth: 45%;
   --ContentMaxWidth: 1200px;
 }
@@ -40,7 +41,12 @@ body {
 }
 
 /* Section headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--AccentColor);
 }
 
