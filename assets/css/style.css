@@ -1,0 +1,99 @@
+:root {
+  --AccentColor: #ff9d4d;
+  --TextColor: rgb(0, 0, 0);
+  --PageBackground: #ffffff;
+
+  --HeaderWidth: 800px;
+  --BodyWidth: 800px;
+  --FooterWidth: 800px;
+}
+
+/* Base styles for the entire page */
+body {
+  background-color: var(--PageBackground);
+  color: var(--TextColor);
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* Header styles */
+.header {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: var(--AccentColor); */
+  color: var(--TextColor);
+  /* border-radius: 10px; */
+  padding: 5px 10px;
+  margin: 8px auto;
+  position: relative;
+  overflow: hidden;
+  max-width: var(--HeaderWidth);
+  width: 100%;
+}
+
+/* Logo styling */
+.logo {
+  display: block;
+  margin: auto 24px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--TextColor);
+  font-size: 1.5rem;
+}
+
+/* Menu styling */
+.menu {
+  display: flex;
+  background-color: transparent;
+  color: var(--TextColor);
+  height: 45.5px;
+  list-style: none;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: auto;
+  align-items: center;
+  margin: auto 24px;
+}
+
+.menu li {
+  color: var(--TextColor);
+  margin: 0 0.4em;
+  transition: transform 0.2s ease;
+}
+
+.menu li:hover {
+  transform: translateY(-2px);
+}
+
+.menu li a {
+  color: var(--TextColor);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.menu li a:hover {
+  color: var(--TextColor);
+}
+
+/* Theme toggle button */
+.toggle-theme-btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  /* color: var(--TextColor); */
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+/* .toggle-theme-btn:hover {
+  background-color: var(--HoverColor);
+} */

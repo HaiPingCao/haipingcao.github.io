@@ -1,0 +1,46 @@
+/* Main content area styles */
+main {
+  max-width: var(--HeaderWidth); /*Adjusted to match header and footer */
+  /* max-width: 33.33vw; */
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Hero section */
+.hero {
+  background-color: var(--CardBackground);
+  border-radius: 10px;
+  padding: 60px 20px;
+  margin-bottom: 10px; /*this is the space between the paragraph and a footer*/
+  text-align: left;
+}
+/* TITLE */
+.hero-title {
+  text-align: left;
+}
+.hero-title-time-separator {
+  /* height: 1px; */
+  border: none;
+  border-top: 3px dotted var(--BorderColor);
+  /* background-color: var(--BorderColor); */
+  margin: 10px 0;
+}
+.hero-upload-time {
+  text-align: left;
+}
+.hero-separator {
+  height: 20px;
+  /* border: none; */
+  /* border-top: 3px dotted var(--BorderColor); */
+  background: repeating-linear-gradient(90deg, var(--BorderColor), var(--BorderColor) 5px, transparent 5px, transparent 10px);
+  margin: 10px 0;
+}
+/* BODY */
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
