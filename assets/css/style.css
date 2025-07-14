@@ -121,6 +121,7 @@ img {
 
 .footer {
   text-align: center;
+  margin-bottom: var(--content-gap);
 }
 
 footer a {
