@@ -3,7 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- DEPENDENCY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
+    <!-- LOCAL SCRIPT -->
     <script src="/assets/js/theme-toggle.js"></script>
+    <!-- <script src="/assets/js/tags.js"></script> -->
+    <script src="/assets/js/markdown-renderer.js"></script>
+
     <title>HAII26</title>
   </head>
 
@@ -23,9 +37,10 @@
             <a href="https://github.com/HaiPingCao"> <span>Github</span></a>
           </li>
           <li>
-            <button class="toggle-theme-btn" aria-label="Toggle dark mode">
-              🌙
-            </button>
+            <button
+              class="toggle-theme-btn"
+              aria-label="Toggle dark mode"
+            ></button>
           </li>
         </ul>
       </div>
@@ -34,21 +49,14 @@
     <main class="main">
       <article class="article-single">
         <header class="post-header">
-          <h1 class="post-title">This is my website, just for testing.</h1>
+          <h1 class="post-title"></h1>
           <div class="post-meta">
-            <span>Jul 11,25</span>
-            <!-- <span>HAII26</span> -->
+            <span></span>
+            <div class="tags-container"></div>
           </div>
         </header>
-        <figure class="entry-cover">
-          <img loading="eager" srcset="/assets/images/bg.jpg" />
-        </figure>
-        <div class="post-content">
-          This is my website—hosted on GitHub as a portfolio and blog. I’ve
-          never liked frontend work, but I gave it a shot anyway. The result?
-          Just headaches and confusion. Centering a div? Making it responsive?
-          Trying to make it look good? I’m out.
-        </div>
+        <figure class="entry-cover"></figure>
+        <div class="post-content"></div>
       </article>
     </main>
     <footer class="footer">
