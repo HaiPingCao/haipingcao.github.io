@@ -45,8 +45,8 @@
 }
 
 .navbar_menu {
-  display: flex;
-  list-style: none;
+  display: flex; /* Verticaly -> Horizontally */
+  list-style: none; /* Remove bullet */
   text-align: center;
   align-items: center;
   padding: 0 1rem;
@@ -57,11 +57,11 @@
   margin: 0 0.5rem;
 }
 
-.navbar_menu a {
+.navbar_menu a { /* Style for a(element) of navbar_menu */
   color: inherit;
   display: block;
   padding: 0.5rem;
-  text-decoration: none;
+  text-decoration: none; /* Remove link underline */
 }
 
 /* POST */
