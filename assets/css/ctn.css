@@ -1,0 +1,86 @@
+.button_container {
+  display: flex;
+  background-color: #ff7b47;
+
+  width: calc(100% - 20px); /* Leaves 10px margin on each side */
+  margin: 10px; /* Creates space from page border */
+  padding: 5px;
+
+  border-radius: 10px; /* Adjust the value for more or less rounded corners */
+  height: auto; /* Height adjusts to content */
+  box-sizing: border-box; /* Includes padding in the width calculation */
+}
+
+.container {
+  display: flex;
+  background-color: #1a03eb;
+
+  width: calc(100% - 20px); /* Leaves 10px margin on each side */
+  margin: 10px; /* Creates space from page border */
+  padding: 5px;
+  border-radius: 10px; /* Adjust the value for more or less rounded corners */
+  height: auto; /* Height adjusts to content */
+  box-sizing: border-box; /* Includes padding in the width calculation */
+
+  /* justify-content: end; */
+}
+
+.example_container {
+  display: flex;
+  background-color: #1a03eb;
+
+  width: calc(100% - 20px); /* Leaves 10px margin on each side */
+  margin: 10px; /* Creates space from page border */
+  padding: 5px;
+  border-radius: 10px; /* Adjust the value for more or less rounded corners */
+  height: auto; /* Height adjusts to content */
+  box-sizing: border-box; /* Includes padding in the width calculation */
+
+  justify-content: end;
+  gap: 5px;
+  /* justify-content: space-between; */
+}
+
+.canvas_block {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  min-width: 250px; /* Use min-width instead of fixed width with !important */
+  min-height: 250px; /* Use min-height instead of fixed height with !important */
+
+  border-radius: 10px;
+  flex-shrink: 0; /* Prevent the canvas_block from shrinking */
+  box-sizing: border-box;
+}
+
+.option_panel {
+  background-color: rgb(250, 166, 39);
+  display: flex;
+
+  flex-grow: 1; /* Allow option_panel to grow and take available space */
+  max-height: 250px;
+  width: 100%;
+
+  border-radius: 10px;
+  overflow-y: scroll; /* if item overlow -> scroll */
+
+  padding: 20px; /* Creates "inner text margin" */
+}
+
+.option_panel::-webkit-scrollbar {
+  overflow: scroll;
+  /* scrollbar-color: red orange; */
+  scrollbar-width: thin;
+}
+
+.option_panel::-webkit-scrollbar-track {
+  background: transparent; /* Make the track transparent */
+}
+
+.option_panel::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5); /* Color of the scroll thumb */
+  border-radius: 0.25em; /* Roundness of the scroll thumb */
+}
+
+.option_panel::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.6); /* Color of the scroll thumb on hover */
+}
